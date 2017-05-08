@@ -106,12 +106,6 @@ def run(filename):
                 
         elif line == 'clear':
             edges = []
-            
-        elif line == 'ident':
-            ident(transform)
-
-        elif line == 'apply':
-            matrix_mult( transform, edges )
 
         elif line == 'push':
             stack.append( [x[:] for x in stack[-1]] )
